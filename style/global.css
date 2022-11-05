@@ -1,0 +1,29 @@
+body {
+    font-family: var(--standard-font);
+    background-color: var(--secondary-color);
+}
+
+main {
+    margin: auto;
+    max-width: 1000px;
+}
+
+/* Bootstrap Overrides */
+.navbar {
+    --bs-border-width: 2px;
+    --bs-navbar-nav-link-padding-x: 1rem;
+    background-color: var(--primary-color);
+}
+
+.navbar-nav {
+    --bs-nav-link-color: var(--white);
+    --bs-nav-link-hover-color: var(--light-accent);
+}
+
+.navbar-nav .nav-item {
+    font-size: 1.5rem;
+}
+
+.card {
+    margin: 1.5rem;
+}

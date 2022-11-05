@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab&family=Satisfy&display=swap');
+
+:root {
+    --white: #f6f8f8;
+    --light-accent: #f1bb93;
+    --dark-accent: #818BC5;
+    --primary-color: #824C4C;
+    --secondary-color: #4c6782;
+    --success-color: #5c914f;
+    --warning-color: #da8117;
+    --danger-color: #f44336;
+
+    --fancy-font: 'Satisfy', cursive;
+    --standard-font: 'Josefin Slab', serif;
+}
