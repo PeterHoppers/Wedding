@@ -27,3 +27,7 @@ main {
 .card {
     margin: 1.5rem;
 }
+
+.card-text {
+    font-weight: bold;
+}
