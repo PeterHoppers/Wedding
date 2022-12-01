@@ -14,6 +14,10 @@ const TopNavigation = (props) => {
         props.updatePage(Pages.Self);
     }
 
+    const bioHandler = () => {
+        props.updatePage(Pages.Bios);
+    }
+
     const accomodationsHandler = () => {
         props.updatePage(Pages.Hotel)
     }
@@ -25,6 +29,7 @@ const TopNavigation = (props) => {
                     <Nav>
                         <Nav.Link onClick={mainPageHandler}>Our Wedding</Nav.Link>
                         <Nav.Link onClick={storyHandler}>Our Story</Nav.Link>
+                        <Nav.Link onClick={bioHandler}>Wedding Party</Nav.Link>
                         <Nav.Link onClick={accomodationsHandler}>Accommodations</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
