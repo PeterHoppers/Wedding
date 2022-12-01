@@ -1,0 +1,23 @@
+$theme-colors: (
+    "primary": #824C4C,
+    "danger": teal
+);
+
+
+:root {
+    --white: #f6f8f8;
+    --light-accent: #f1bb93;
+    --dark-accent: #818BC5;
+    --primary-color: #824C4C;
+    --secondary-color: #4c6782;
+    --success-color: #5c914f;
+    --warning-color: #da8117;
+    --danger-color: #f44336;
+
+    --fancy-font: 'Satisfy', cursive;
+    --standard-font: 'Josefin Slab', serif;
+
+    --bs-body-font-family: var(--standard-font) !important;
+}
+
+@import "~bootstrap/scss/bootstrap";
