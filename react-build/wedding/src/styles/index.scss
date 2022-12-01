@@ -1,0 +1,32 @@
+.img-display-holder {
+    position: relative;
+}
+
+.img-text-display {
+    max-width: 100%;
+}
+
+.img-text-holder {
+    position: absolute;    
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    text-align: center;
+    color: var(--white);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.img-text-holder h1 {
+    font-family: var(--fancy-font);
+    font-size: min(7rem, 15vw);
+}
+
+.img-text-holder span {
+    font-family: var(--standard-font);
+    font-size: min(1.5rem, 4vw);
+}
