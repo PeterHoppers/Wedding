@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkwedding=self.webpackChunkwedding||[]).push([[140],{140:function(e,a,c){e.exports=c.p+"static/media/miranda.a9ce3b560bbb645cfd51.jpg"}}]);
