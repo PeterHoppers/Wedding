@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkwedding=self.webpackChunkwedding||[]).push([[5],{5:function(e,d,i){e.exports=i.p+"static/media/maddie.f319c30d7f4751131bd2.jpg"}}]);

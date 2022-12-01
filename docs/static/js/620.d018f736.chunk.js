@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkwedding=self.webpackChunkwedding||[]).push([[620],{620:function(e,a,s){e.exports=s.p+"static/media/sirena.4f0903dca3b8a9d42a0b.jpg"}}]);

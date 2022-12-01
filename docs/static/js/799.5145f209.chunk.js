@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkwedding=self.webpackChunkwedding||[]).push([[799],{799:function(e,d,i){e.exports=i.p+"static/media/christine.25c4ed7a0d541d881261.jpg"}}]);
