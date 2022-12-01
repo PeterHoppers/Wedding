@@ -18,11 +18,11 @@ const TopNavigation = (props) => {
         props.updatePage(Pages.Hotel)
     }
     return (
-        <Navbar bg="primary" expand="lg">
-            <Container>
+        <Navbar bg="primary" expand="lg" className="ps-2 pe-2">
+            <Container className="ms-0 me-0">
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                <Navbar.Collapse id="basic-navbar-nav">
-                    <Nav className="me-auto">
+                <Navbar.Collapse className="justify-content-center" id="basic-navbar-nav">
+                    <Nav>
                         <Nav.Link onClick={mainPageHandler}>Our Wedding</Nav.Link>
                         <Nav.Link onClick={storyHandler}>Our Story</Nav.Link>
                         <Nav.Link onClick={accomodationsHandler}>Accommodations</Nav.Link>
