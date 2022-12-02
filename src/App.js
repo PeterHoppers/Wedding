@@ -18,6 +18,12 @@ function App() {
   }
 
   const renderPage = () => {
+    if (currentPage === Pages.Registry) {
+      document.body.classList.add("display-registry");
+    } else {
+      document.body.classList.remove("display-registry");
+    }
+
     switch(currentPage) {
       case Pages.Main:
         return <Home/>;
@@ -28,10 +34,10 @@ function App() {
       case Pages.Bios:
         return <Bios/>;
       case Pages.RSVP:
-        return <Rsvp/>
+        return <Rsvp/>      
       default:
-        return <p/>
-    }
+        return <span/>
+    }    
   }
   return (
     <>

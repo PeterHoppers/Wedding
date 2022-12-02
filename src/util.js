@@ -4,6 +4,7 @@ const Pages = Object.freeze({
     Self: "Our Story",
     Bios: "Wedding Party",
     RSVP: "RSVP",
+    Registry: "Registry"
 });
 
 const rsvpStatus = Object.freeze({
