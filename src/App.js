@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './styles/App.scss';
+import './styles/app.scss';
 import TopNavigation from './components/TopNavigation';
 
 import { Pages } from './util';
@@ -8,6 +8,7 @@ import { Home } from './pages/Home';
 import { Accommodations } from './pages/Accomodations';
 import { OurStory } from './pages/OurStory';
 import { Bios } from './pages/Bios';
+import { Rsvp } from './pages/Rsvp';
 
 function App() {
   const [currentPage, setPage] = useState(Pages.Main);
@@ -26,6 +27,8 @@ function App() {
         return <OurStory/>;
       case Pages.Bios:
         return <Bios/>;
+      case Pages.RSVP:
+        return <Rsvp/>
       default:
         return <p/>
     }

@@ -17,7 +17,6 @@ body {
   .navbar {
     --bs-border-width: 2px;
     --bs-navbar-nav-link-padding-x: 1rem;
-    background-color: var(--primary-color) !important;
   }
 
   .navbar-nav {
@@ -27,6 +26,10 @@ body {
 
   .navbar-nav .nav-link {
     font-size: 1.5rem;
+  }
+
+  .navbar-toggler {
+    border-color: var(--bs-body-color);
   }
 
   @media (min-width: 992px) {
@@ -55,7 +58,7 @@ body {
 
   main {
     margin: 5rem auto;
-    padding: 0 .5em;
+    padding: 0 1em;
     max-width: 1000px;
 
     p {

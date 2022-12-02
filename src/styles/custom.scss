@@ -1,7 +1,4 @@
-$theme-colors: (
-    "primary": #824C4C,
-    "danger": teal
-);
+@import "node_modules/bootstrap/scss/functions";
 
 
 :root {
@@ -19,5 +16,11 @@ $theme-colors: (
 
     --bs-body-font-family: var(--standard-font) !important;
 }
+
+$theme-colors: (
+    "primary": #824C4C,
+    "secondary": #4c6782,
+    "danger": #ff4136
+);
 
 @import "~bootstrap/scss/bootstrap";
