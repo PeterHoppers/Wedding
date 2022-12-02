@@ -57,7 +57,7 @@ bioArray.push(new Bio(
     "Christine Hoppe",
     "christine.jpg",
     "",
-    "Due to being the older sister, Christine has had to deal with Peter all his life. It started off with her hiding his toys, but as they got older, she started to enjoy having her brother around while they explored the golf course, practicing soccer in their backyard, and jammed out to songs in the car. While they don't see each other as much as they used to with her living in Las Vegas, whenever they are together, fun times are had.",
+    "Due to being the older sister, Christine has had to deal with Peter all his life. It started off with her hiding his toys, but as they got older, she started to enjoy having her brother around while they explored the golf course, practiced soccer in their backyard, and jammed out to songs in her car. While they don't see each other as much as they used to with her living in Las Vegas, whenever they are together, fun times are had.",
     true
 ));
 
