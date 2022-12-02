@@ -17,11 +17,11 @@ const TopNavigation = (props) => {
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse className="justify-content-center" id="basic-navbar-nav">
                     <Nav>
-                        <Nav.Link onClick={updatePageHandler(Pages.Main)}>Our Wedding</Nav.Link>
-                        <Nav.Link onClick={updatePageHandler(Pages.Self)}>Our Story</Nav.Link>
-                        <Nav.Link onClick={updatePageHandler(Pages.Bios)}>Wedding Party</Nav.Link>
-                        <Nav.Link onClick={updatePageHandler(Pages.Hotel)}>Accommodations</Nav.Link>
-                        <Nav.Link onClick={updatePageHandler(Pages.RSVP)}>RSVP</Nav.Link>
+                        <Nav.Link onClick={updatePageHandler(Pages.Main)} className={(props.activePage === Pages.Main) ? "active-link" : ""}>Our Wedding</Nav.Link>
+                        <Nav.Link onClick={updatePageHandler(Pages.Self)} className={(props.activePage === Pages.Self) ? "active-link" : ""}>Our Story</Nav.Link>
+                        <Nav.Link onClick={updatePageHandler(Pages.Bios)} className={(props.activePage === Pages.Bios) ? "active-link" : ""}>Wedding Party</Nav.Link>
+                        <Nav.Link onClick={updatePageHandler(Pages.Hotel)} className={(props.activePage === Pages.Hotel) ? "active-link" : ""}>Accommodations</Nav.Link>
+                        <Nav.Link onClick={updatePageHandler(Pages.RSVP)} className={(props.activePage === Pages.RSVP) ? "active-link" : ""}>RSVP</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>

@@ -35,7 +35,7 @@ function App() {
   }
   return (
     <>
-      <TopNavigation updatePage={updatePage}/>
+      <TopNavigation updatePage={updatePage} activePage={currentPage}/>
       {renderPage()}
     </>
   );
