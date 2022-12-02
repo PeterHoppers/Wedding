@@ -9,7 +9,7 @@ const Pages = Object.freeze({
 const rsvpStatus = Object.freeze({
     Yes: "Yes",
     No: "No",
-    Partial: "Partial"
+    Partial: "Partially"
 });
 
 export {

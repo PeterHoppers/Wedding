@@ -16,6 +16,8 @@ export const Rsvp = () => {
     const [rsvp, setRsvp] = useState('Yes');
     const [extraInfo, setInfo] = useState('');
 
+    const [amountExtras, setExtras] = useState('0');    
+
     const [isSubmitted, setSubmitted] = useState(false);
 
     const inputFirstHandler = (event) => {
@@ -36,6 +38,33 @@ export const Rsvp = () => {
 
     const inputInfoHandler = (event) => {
         setInfo(event.target.value);
+    }
+
+    const inputExtraHandler = (event) => {
+        setExtras(event.target.value);
+    }
+
+    const renderExtraForms = () => {
+        let extraFields = [];
+        extraFields = [];
+
+        for (let index = 1; index <= amountExtras; index++)
+        {
+            extraFields.push(
+                <div className='form-grouping' key={"form-extra-" + index}>
+                    <Form.Group className="mb-3 form-holder" controlId={"formFirstName" + index}>
+                        <Form.Label>{"First Name of Person " + index + ":"}</Form.Label>
+                        <Form.Control type="text" placeholder="Enter first name" size="lg" required={true} maxLength={25} className="form-extra-first-name"/>                
+                    </Form.Group>
+                    <Form.Group className="mb-3 form-holder" controlId={"formLastName" + index}>
+                        <Form.Label>{"Last Name of Person " + index + ":"}</Form.Label>
+                        <Form.Control type="text" placeholder="Enter last name" size="lg" required={true} maxLength={25} className="form-extra-last-name"/>                
+                    </Form.Group>
+                </div>    
+            )
+        }
+
+        return extraFields;
     }
 
     const reSubmitHandler = () => {
@@ -59,6 +88,22 @@ export const Rsvp = () => {
         }
         formData.append('info', sentInfo);
 
+        const extraFirstNames = document.querySelectorAll(".form-extra-first-name");
+        const extraLastNames = document.querySelectorAll(".form-extra-last-name");
+
+        let extraNames = "";
+
+        for (let index = 0; index < extraFirstNames.length; index++)
+        {
+            //don't add a new line break the first time through
+            if (index !== 0) {
+                extraNames += '\n'
+            }
+            extraNames += `${extraFirstNames[index].value} ${extraLastNames[index].value}`;
+        }
+
+        formData.append('extras', extraNames);
+
         fetch(formUrl, {
             method: 'POST', 
             body: formData,
@@ -75,6 +120,7 @@ export const Rsvp = () => {
         setEmail('');
         setRsvp('Yes');
         setInfo('');
+        setExtras('0');
     }
 
     const getMessageString = () => {
@@ -119,11 +165,11 @@ export const Rsvp = () => {
                             </Form.Group>            
 
                             <Form.Group className="mb-3 form-holder" controlId="formBasicRSVP">
-                                <Form.Label>Attending Status:</Form.Label>
+                                <Form.Label>Planning to Attend?</Form.Label>
                                 <Form.Select aria-label="Options for attending" onChange={inputStatusHandler} size="lg" value={rsvp}>
-                                    <option>Yes</option>
-                                    <option>Partial</option>
-                                    <option>No</option>
+                                    <option>{rsvpStatus.Yes}</option>
+                                    <option>{rsvpStatus.Partial}</option>
+                                    <option>{rsvpStatus.No}</option>
                                 </Form.Select>
                             </Form.Group>
                         </div>    
@@ -136,6 +182,25 @@ export const Rsvp = () => {
                                 </Form.Group>
                             </>
                         }
+
+                        {rsvp !== rsvpStatus.No &&
+                            <>
+                                <Form.Group className="mb-3" controlId="formAmountInfo">
+                                    <Form.Label>How many people are you bringing?</Form.Label>
+                                    <Form.Select id="form-extra-options" aria-label="Options for attending" onChange={inputExtraHandler} size="lg" value={amountExtras}>
+                                        <option>0</option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                        <option>6</option>
+                                    </Form.Select>
+                                </Form.Group>
+
+                                {renderExtraForms()}
+                            </>
+                        }                       
                     
                         <div className='form-btn-holder'>
                             <Button id="submit-btn" variant="secondary" type="submit" size="lg" disabled={isSubmitted}>
