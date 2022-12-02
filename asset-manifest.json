@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Wedding/static/css/main.1c3d9098.css",
-    "main.js": "/Wedding/static/js/main.6b3e6db0.js",
+    "main.css": "/Wedding/static/css/main.6f4ef44a.css",
+    "main.js": "/Wedding/static/js/main.a64127bf.js",
     "static/js/550.d1769b5f.chunk.js": "/Wedding/static/js/550.d1769b5f.chunk.js",
     "static/js/795.69620001.chunk.js": "/Wedding/static/js/795.69620001.chunk.js",
     "static/js/799.5145f209.chunk.js": "/Wedding/static/js/799.5145f209.chunk.js",
@@ -17,7 +17,7 @@
     "static/media/katie.jpg": "/Wedding/static/media/katie.b8e639c611120d920108.jpg",
     "static/media/christine.jpg": "/Wedding/static/media/christine.25c4ed7a0d541d881261.jpg",
     "static/media/miranda.jpg": "/Wedding/static/media/miranda.a9ce3b560bbb645cfd51.jpg",
-    "static/media/landing-photo.jpg": "/Wedding/static/media/landing-photo.752115957d3db9273109.jpg",
+    "static/media/landing-photo.jpg": "/Wedding/static/media/landing-photo.fd9181308177b8f7c922.jpg",
     "static/media/sam.jpg": "/Wedding/static/media/sam.cae83e2426b9e74b40f6.jpg",
     "static/media/ryan.jpg": "/Wedding/static/media/ryan.35f1bf5b7dab3e758f96.jpg",
     "static/media/chase.jpg": "/Wedding/static/media/chase.451e275e02fb991f985c.jpg",
@@ -25,11 +25,11 @@
     "static/media/msnsp-exterior.webp": "/Wedding/static/media/msnsp-exterior.f13cc9b1de92fac041aa.webp",
     "static/media/maddie.jpg": "/Wedding/static/media/maddie.f319c30d7f4751131bd2.jpg",
     "index.html": "/Wedding/index.html",
-    "main.1c3d9098.css.map": "/Wedding/static/css/main.1c3d9098.css.map",
-    "main.6b3e6db0.js.map": "/Wedding/static/js/main.6b3e6db0.js.map"
+    "main.6f4ef44a.css.map": "/Wedding/static/css/main.6f4ef44a.css.map",
+    "main.a64127bf.js.map": "/Wedding/static/js/main.a64127bf.js.map"
   },
   "entrypoints": [
-    "static/css/main.1c3d9098.css",
-    "static/js/main.6b3e6db0.js"
+    "static/css/main.6f4ef44a.css",
+    "static/js/main.a64127bf.js"
   ]
 }
