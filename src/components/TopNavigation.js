@@ -20,6 +20,7 @@ const TopNavigation = (props) => {
                         <Nav.Link onClick={updatePageHandler(Pages.Main)} className={(props.activePage === Pages.Main) ? "active-link" : ""}>Our Wedding</Nav.Link>
                         <Nav.Link onClick={updatePageHandler(Pages.Self)} className={(props.activePage === Pages.Self) ? "active-link" : ""}>Our Story</Nav.Link>
                         <Nav.Link onClick={updatePageHandler(Pages.Bios)} className={(props.activePage === Pages.Bios) ? "active-link" : ""}>Wedding Party</Nav.Link>
+                        <Nav.Link onClick={updatePageHandler(Pages.Registry)} className={(props.activePage === Pages.Registry) ? "active-link" : ""}>Registry</Nav.Link>
                         <Nav.Link onClick={updatePageHandler(Pages.Hotel)} className={(props.activePage === Pages.Hotel) ? "active-link" : ""}>Accommodations</Nav.Link>
                         <Nav.Link onClick={updatePageHandler(Pages.RSVP)} className={(props.activePage === Pages.RSVP) ? "active-link" : ""}>RSVP</Nav.Link>
                     </Nav>

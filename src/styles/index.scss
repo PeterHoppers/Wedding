@@ -30,3 +30,11 @@
     font-family: var(--standard-font);
     font-size: min(1.75rem, 4vw);
 }
+
+#myregsitry_embeded_iframe {
+    display: none !important;
+    .display-registry & {
+        display:  block !important;
+        min-height: 4000px;
+    }
+}
