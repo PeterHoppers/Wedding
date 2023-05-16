@@ -28,7 +28,7 @@ export const Home = (props) => {
                 <div className ="home-summary">
                     <h2>Itinerary</h2>
                     <div className="home-summary-description">
-                        <h3>Cermony starts at 1:00 pm</h3>
+                        <h3>Ceremony starts at 1:00 pm</h3>
                         <a href="https://www.google.com/maps/place/Paradise+Park+Weddings/@43.0174442,-89.2048897,15z/data=!4m2!3m1!1s0x0:0xab67265d96696827?sa=X&ved=2ahUKEwjdwoTs6Pj-AhXRk4kEHfF0D4MQ_BJ6BAh2EAg" target="_blank" rel="noreferrer">
                             <span>Paradise Park</span><br/>
                             <span>3109 Oak Street</span><br/>
