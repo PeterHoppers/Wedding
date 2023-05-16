@@ -186,7 +186,7 @@ export const Rsvp = () => {
                         {rsvp !== rsvpStatus.No &&
                             <>
                                 <Form.Group className="mb-3" controlId="formAmountInfo">
-                                    <Form.Label>How many people are you bringing?</Form.Label>
+                                    <Form.Label>How many people are accompanying you?</Form.Label>
                                     <Form.Select id="form-extra-options" aria-label="Options for attending" onChange={inputExtraHandler} size="lg" value={amountExtras}>
                                         <option>0</option>
                                         <option>1</option>
